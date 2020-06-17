@@ -54,13 +54,22 @@ datasets <- c('zoo',
               'spambase',
               'nursery')
 
+
 option_list = list(
   make_option(c("-d", "--dataset"), type="character", default=NULL,
-              help="Dataset file name.", metavar="character"),
+              help="Dataset file name."),
 	make_option(c("-e", "--evaluation"), type="character", default="acc",
-              help="Type of experiment", metavar="character"),
+              help="Type of experiment"),
   make_option(c("-o", "--output_dir"), type="character", default=NULL,
-              help="Output dir", metavar="character")
+              help="Output dir"),
+  make_option(c("-f", "--nfolds"), type="integer", default=5,
+              help="The number of folds for cross-validation"),
+  make_option(c("-r", "--nruns"), type="integer", default=1,
+              help="The number of times to run over a dataset"),
+  make_option(c("-t", "--thr"), type="double", default=0.01,
+              help="The p-value above which variables are considered dependent"),
+  make_option(c("-g", "--height"), type="integer", default=1000000,
+              help="Maximum height of the SPN")
 );
 
 opt_parser = OptionParser(option_list=option_list);
@@ -93,15 +102,18 @@ for(file in files){
       data <- read.arff(file)
       data <- getDummies(data)
       if(is.element('mem', opt$evaluation)) {
-          res <- spn.cv(data, nfolds=5, classcol=ncol(data), nruns=nruns,
+          res <- spn.cv(data, nfolds=opt$nfolds, classcol=ncol(data), nruns=opt$nruns,
                         ncores=ncores, use_memory=FALSE, seed=seed, run.rob=TRUE,
+                        height=opt$height, thr=opt$thr,
                         path=paste(output_dir, '/', name, '_nomem.csv', sep=""))
-          res_mem <- spn.cv(data, nfolds=5, classcol=ncol(data), nruns=nruns,
+          res_mem <- spn.cv(data, nfolds=opt$nfolds, classcol=ncol(data), nruns=opt$nruns,
                             ncores=ncores, use_memory=TRUE, seed=seed, run.rob=TRUE,
+                            height=opt$height, thr=opt$thr,
                             path=paste(output_dir, '/', name, '_mem.csv', sep=""))
       } else {
-          spn.cv_acc(data, nfolds=5, classcol=ncol(data), nruns=nruns,
+          spn.cv_acc(data, nfolds=opt$nfolds, classcol=ncol(data), nruns=opt$nruns,
                             ncores=ncores, use_memory=TRUE, run.rob=TRUE,
+                            height=opt$height, thr=opt$thr,
                             path=paste(output_dir, '/', name, sep=""))
       }
   }
