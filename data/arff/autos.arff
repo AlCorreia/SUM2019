@@ -1,0 +1,235 @@
+@relation autos
+
+@attribute normalized-losses {FALSE,TRUE}
+@attribute make {alfa-romero,audi,bmw,chevrolet,dodge,honda,isuzu,jaguar,mazda,mercedes-benz,mercury,mitsubishi,nissan,peugot,plymouth,porsche,renault,saab,subaru,toyota,volkswagen,volvo}
+@attribute fuel-type {diesel,gas}
+@attribute aspiration {std,turbo}
+@attribute num-of-doors {four,two}
+@attribute body-style {hardtop,wagon,sedan,hatchback,convertible}
+@attribute drive-wheels {4wd,fwd,rwd}
+@attribute engine-location {front,rear}
+@attribute wheel-base {FALSE,TRUE}
+@attribute length {FALSE,TRUE}
+@attribute width {FALSE,TRUE}
+@attribute height {FALSE,TRUE}
+@attribute curb-weight {FALSE,TRUE}
+@attribute engine-type {dohc,dohcv,l,ohc,ohcf,ohcv,rotor}
+@attribute num-of-cylinders {eight,five,four,six,three,twelve,two}
+@attribute engine-size {FALSE,TRUE}
+@attribute fuel-system {1bbl,2bbl,4bbl,idi,mfi,mpfi,spdi,spfi}
+@attribute bore {FALSE,TRUE}
+@attribute stroke {FALSE,TRUE}
+@attribute compression-ratio {FALSE,TRUE}
+@attribute horsepower {FALSE,TRUE}
+@attribute peak-rpm {FALSE,TRUE}
+@attribute city-mpg {FALSE,TRUE}
+@attribute highway-mpg {FALSE,TRUE}
+@attribute symboling {-3,-2,-1,0,1,2,3}
+@attribute price {FALSE,TRUE}
+
+@data
+FALSE,alfa-romero,gas,std,two,convertible,rwd,front,TRUE,TRUE,TRUE,TRUE,FALSE,dohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,alfa-romero,gas,std,two,convertible,rwd,front,TRUE,TRUE,TRUE,TRUE,FALSE,dohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,alfa-romero,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,FALSE,ohcv,six,FALSE,mpfi,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,1,FALSE
+FALSE,audi,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,2,FALSE
+FALSE,audi,gas,std,four,sedan,4wd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,2,FALSE
+FALSE,audi,gas,std,two,sedan,fwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,2,FALSE
+FALSE,audi,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,1,FALSE
+FALSE,audi,gas,std,four,wagon,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,1,FALSE
+FALSE,audi,gas,turbo,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,1,FALSE
+FALSE,audi,gas,turbo,two,hatchback,4wd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,bmw,gas,std,two,sedan,rwd,front,FALSE,FALSE,TRUE,FALSE,TRUE,ohc,four,TRUE,mpfi,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,2,FALSE
+FALSE,bmw,gas,std,four,sedan,rwd,front,FALSE,FALSE,TRUE,FALSE,TRUE,ohc,four,TRUE,mpfi,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,bmw,gas,std,two,sedan,rwd,front,FALSE,FALSE,TRUE,FALSE,FALSE,ohc,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,bmw,gas,std,four,sedan,rwd,front,FALSE,FALSE,TRUE,FALSE,FALSE,ohc,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,bmw,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,1,FALSE
+FALSE,bmw,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,six,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,bmw,gas,std,two,sedan,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,six,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,bmw,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,six,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,chevrolet,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,l,three,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+TRUE,chevrolet,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,chevrolet,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+FALSE,dodge,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,dodge,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,dodge,gas,turbo,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,dodge,gas,std,four,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,dodge,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,dodge,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,dodge,gas,turbo,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,dodge,gas,std,four,wagon,fwd,front,FALSE,FALSE,TRUE,FALSE,FALSE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,-1,TRUE
+FALSE,dodge,gas,turbo,two,hatchback,fwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mfi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+FALSE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+TRUE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,honda,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,honda,gas,std,four,wagon,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,honda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,honda,gas,std,four,sedan,fwd,front,TRUE,FALSE,TRUE,FALSE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,honda,gas,std,four,sedan,fwd,front,TRUE,FALSE,TRUE,FALSE,TRUE,ohc,four,TRUE,1bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,FALSE
+TRUE,honda,gas,std,four,sedan,fwd,front,TRUE,FALSE,TRUE,FALSE,FALSE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,0,FALSE
+TRUE,honda,gas,std,two,sedan,fwd,front,TRUE,TRUE,FALSE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,1,FALSE
+FALSE,isuzu,gas,std,four,sedan,rwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,TRUE,0,TRUE
+FALSE,isuzu,gas,std,two,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,FALSE
+FALSE,isuzu,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,FALSE
+FALSE,isuzu,gas,std,two,hatchback,rwd,front,TRUE,TRUE,TRUE,TRUE,FALSE,ohc,four,TRUE,spfi,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,2,FALSE
+FALSE,jaguar,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,dohc,six,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,jaguar,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,dohc,six,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,jaguar,gas,std,two,sedan,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohcv,twelve,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+TRUE,mazda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,mazda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,mazda,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,mazda,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,mazda,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,mazda,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,TRUE,rotor,two,TRUE,4bbl,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,mazda,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,TRUE,rotor,two,TRUE,4bbl,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,mazda,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,TRUE,rotor,two,TRUE,4bbl,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,mazda,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,FALSE,rotor,two,TRUE,mpfi,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,mazda,gas,std,two,hatchback,fwd,front,FALSE,FALSE,FALSE,TRUE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,mazda,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+FALSE,mazda,gas,std,two,hatchback,fwd,front,FALSE,FALSE,FALSE,TRUE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,FALSE
+FALSE,mazda,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+FALSE,mazda,diesel,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,idi,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,FALSE
+FALSE,mazda,gas,std,four,hatchback,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,0,FALSE
+FALSE,mazda,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,mazda,diesel,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,idi,FALSE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,FALSE
+TRUE,mercedes-benz,diesel,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,-1,FALSE
+TRUE,mercedes-benz,diesel,turbo,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,-1,FALSE
+TRUE,mercedes-benz,diesel,turbo,two,hardtop,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+TRUE,mercedes-benz,diesel,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,TRUE,-1,FALSE
+FALSE,mercedes-benz,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,eight,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,-1,FALSE
+FALSE,mercedes-benz,gas,std,two,convertible,rwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohcv,eight,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,mercedes-benz,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,eight,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,mercedes-benz,gas,std,two,hardtop,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,eight,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,1,FALSE
+FALSE,mercury,gas,turbo,two,hatchback,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,1,FALSE
+FALSE,mitsubishi,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+FALSE,mitsubishi,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+FALSE,mitsubishi,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+FALSE,mitsubishi,gas,turbo,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,spdi,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,mitsubishi,gas,turbo,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,spdi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,3,TRUE
+FALSE,mitsubishi,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,3,TRUE
+FALSE,mitsubishi,gas,turbo,two,hatchback,fwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,spdi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,mitsubishi,gas,turbo,two,hatchback,fwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,spdi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,mitsubishi,gas,turbo,two,hatchback,fwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,spdi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,mitsubishi,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,mitsubishi,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,mitsubishi,gas,turbo,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,spdi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,1,TRUE
+FALSE,mitsubishi,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,spdi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,-1,TRUE
+FALSE,nissan,gas,std,two,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,nissan,diesel,std,two,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,nissan,gas,std,two,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,nissan,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,nissan,gas,std,four,wagon,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,nissan,gas,std,two,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,nissan,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,nissan,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,nissan,gas,std,four,wagon,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,nissan,gas,std,two,hardtop,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+TRUE,nissan,gas,std,four,hatchback,fwd,front,FALSE,FALSE,TRUE,FALSE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,nissan,gas,std,four,sedan,fwd,front,FALSE,FALSE,TRUE,FALSE,TRUE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,0,TRUE
+FALSE,nissan,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+TRUE,nissan,gas,std,four,wagon,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+TRUE,nissan,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,nissan,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,nissan,gas,turbo,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,nissan,gas,std,two,hatchback,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,1,FALSE
+FALSE,peugot,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,peugot,diesel,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,FALSE
+FALSE,peugot,gas,std,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,peugot,diesel,turbo,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,0,FALSE
+FALSE,peugot,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,peugot,diesel,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,FALSE
+FALSE,peugot,gas,std,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,peugot,diesel,turbo,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,0,FALSE
+FALSE,peugot,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+FALSE,peugot,diesel,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,idi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,0,FALSE
+FALSE,peugot,gas,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,l,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,plymouth,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,plymouth,gas,turbo,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,spdi,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,plymouth,gas,std,four,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,plymouth,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+FALSE,plymouth,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,1,TRUE
+TRUE,plymouth,gas,std,four,wagon,fwd,front,FALSE,FALSE,TRUE,FALSE,FALSE,ohc,four,FALSE,2bbl,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,-1,TRUE
+FALSE,plymouth,gas,turbo,two,hatchback,rwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,spdi,FALSE,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,3,FALSE
+FALSE,porsche,gas,std,two,hatchback,rwd,front,TRUE,TRUE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,porsche,gas,std,two,hardtop,rwd,rear,TRUE,TRUE,TRUE,TRUE,FALSE,ohcf,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,porsche,gas,std,two,hardtop,rwd,rear,TRUE,TRUE,TRUE,TRUE,FALSE,ohcf,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,porsche,gas,std,two,convertible,rwd,rear,TRUE,TRUE,TRUE,TRUE,FALSE,ohcf,six,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,porsche,gas,std,two,hatchback,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,dohcv,eight,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,1,FALSE
+FALSE,renault,gas,std,four,wagon,fwd,front,TRUE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,0,TRUE
+FALSE,renault,gas,std,two,hatchback,fwd,front,TRUE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,TRUE,FALSE,FALSE,TRUE,FALSE,2,TRUE
+FALSE,saab,gas,std,two,hatchback,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+TRUE,saab,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,2,FALSE
+FALSE,saab,gas,std,two,hatchback,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,TRUE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+TRUE,saab,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,2,FALSE
+FALSE,saab,gas,turbo,two,hatchback,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,dohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+TRUE,saab,gas,turbo,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,dohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,2,FALSE
+TRUE,subaru,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+TRUE,subaru,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+TRUE,subaru,gas,std,two,hatchback,4wd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,TRUE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+TRUE,subaru,gas,std,four,sedan,fwd,front,FALSE,TRUE,TRUE,TRUE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,subaru,gas,std,four,sedan,fwd,front,FALSE,TRUE,TRUE,TRUE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,subaru,gas,std,four,sedan,fwd,front,FALSE,TRUE,TRUE,TRUE,TRUE,ohcf,four,TRUE,mpfi,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,subaru,gas,std,four,sedan,4wd,front,FALSE,TRUE,TRUE,FALSE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,TRUE,0,TRUE
+TRUE,subaru,gas,turbo,four,sedan,4wd,front,FALSE,TRUE,TRUE,FALSE,FALSE,ohcf,four,TRUE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,FALSE,TRUE,0,FALSE
+TRUE,subaru,gas,std,four,wagon,fwd,front,FALSE,FALSE,TRUE,TRUE,TRUE,ohcf,four,TRUE,2bbl,FALSE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,subaru,gas,std,four,wagon,fwd,front,FALSE,FALSE,TRUE,TRUE,FALSE,ohcf,four,TRUE,mpfi,FALSE,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,0,TRUE
+TRUE,subaru,gas,std,four,wagon,4wd,front,TRUE,FALSE,TRUE,FALSE,FALSE,ohcf,four,TRUE,2bbl,FALSE,TRUE,FALSE,TRUE,TRUE,TRUE,TRUE,0,TRUE
+TRUE,subaru,gas,turbo,four,wagon,4wd,front,TRUE,FALSE,TRUE,FALSE,FALSE,ohcf,four,TRUE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,0,FALSE
+TRUE,toyota,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,toyota,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,toyota,gas,std,four,hatchback,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+TRUE,toyota,gas,std,four,wagon,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,wagon,4wd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,wagon,4wd,front,TRUE,TRUE,TRUE,FALSE,FALSE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,diesel,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,diesel,std,four,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+TRUE,toyota,gas,std,four,sedan,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,0,TRUE
+FALSE,toyota,gas,std,two,sedan,rwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,toyota,gas,std,two,hatchback,rwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,2bbl,TRUE,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,1,TRUE
+FALSE,toyota,gas,std,two,sedan,rwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,dohc,four,TRUE,mpfi,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,1,TRUE
+FALSE,toyota,gas,std,two,hatchback,rwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,dohc,four,TRUE,mpfi,TRUE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,1,TRUE
+FALSE,toyota,gas,std,two,hardtop,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,2,TRUE
+FALSE,toyota,gas,std,two,hardtop,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,2,TRUE
+FALSE,toyota,gas,std,two,hatchback,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,2,TRUE
+FALSE,toyota,gas,std,two,hardtop,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,2,FALSE
+FALSE,toyota,gas,std,two,hatchback,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,2,FALSE
+FALSE,toyota,gas,std,two,convertible,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,2,FALSE
+TRUE,toyota,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,TRUE,ohc,four,FALSE,mpfi,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,-1,TRUE
+TRUE,toyota,diesel,turbo,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,-1,FALSE
+TRUE,toyota,gas,std,four,hatchback,fwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,-1,TRUE
+TRUE,toyota,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,-1,FALSE
+TRUE,toyota,gas,std,four,hatchback,fwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,ohc,four,FALSE,mpfi,FALSE,FALSE,TRUE,TRUE,TRUE,FALSE,FALSE,-1,FALSE
+FALSE,toyota,gas,std,two,hatchback,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,dohc,six,FALSE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+FALSE,toyota,gas,std,two,hatchback,rwd,front,FALSE,FALSE,FALSE,TRUE,FALSE,dohc,six,FALSE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,3,FALSE
+TRUE,toyota,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,dohc,six,FALSE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
+FALSE,toyota,gas,std,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,dohc,six,FALSE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
+FALSE,volkswagen,diesel,std,two,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+FALSE,volkswagen,gas,std,two,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+TRUE,volkswagen,diesel,std,four,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+TRUE,volkswagen,gas,std,four,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+TRUE,volkswagen,gas,std,four,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,2,TRUE
+TRUE,volkswagen,diesel,turbo,four,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,2,TRUE
+TRUE,volkswagen,gas,std,four,sedan,fwd,front,FALSE,TRUE,FALSE,FALSE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,2,TRUE
+FALSE,volkswagen,gas,std,two,convertible,fwd,front,TRUE,TRUE,TRUE,FALSE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,3,FALSE
+FALSE,volkswagen,gas,std,two,hatchback,fwd,front,TRUE,TRUE,TRUE,TRUE,TRUE,ohc,four,TRUE,mpfi,TRUE,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,3,TRUE
+FALSE,volkswagen,gas,std,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,five,FALSE,mpfi,TRUE,FALSE,TRUE,FALSE,FALSE,TRUE,TRUE,0,FALSE
+FALSE,volkswagen,diesel,turbo,four,sedan,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,TRUE,idi,TRUE,FALSE,FALSE,TRUE,TRUE,FALSE,FALSE,0,FALSE
+FALSE,volkswagen,gas,std,four,wagon,fwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,TRUE,mpfi,TRUE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE,0,FALSE
+TRUE,volvo,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,-2,FALSE
+TRUE,volvo,gas,std,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
+TRUE,volvo,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,-2,FALSE
+TRUE,volvo,gas,std,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,TRUE,-1,FALSE
+TRUE,volvo,gas,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,-2,FALSE
+TRUE,volvo,gas,turbo,four,wagon,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,TRUE,TRUE,TRUE,-1,FALSE
+TRUE,volvo,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
+TRUE,volvo,gas,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
+TRUE,volvo,gas,std,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohcv,six,FALSE,mpfi,FALSE,TRUE,TRUE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
+TRUE,volvo,diesel,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,six,FALSE,idi,TRUE,FALSE,FALSE,FALSE,TRUE,FALSE,TRUE,-1,FALSE
+TRUE,volvo,gas,turbo,four,sedan,rwd,front,FALSE,FALSE,FALSE,FALSE,FALSE,ohc,four,FALSE,mpfi,FALSE,TRUE,FALSE,FALSE,FALSE,TRUE,TRUE,-1,FALSE
