@@ -1,27 +1,28 @@
 # Towards scalable and robust sum-product networks - SUM2019
 
-This is the code for the paper "Towards scalable and robust sum-product networks" presented at 
+This is the code for the paper "Towards scalable and robust sum-product networks" presented at
 the 13th international conference on Scalable Uncertainty Management (SUM 2019).
 
 It is essentially an implementation of LearnSPN [1] in R, with a few important contributions:
-1. **Robust estimates**: The model is capable of giving an estimate of the *robustness* of each classification. 
-Roughly speaking, we see how much we can perturb the parameters of the SPN without changing the final output. 
+1. **Robust estimates**: The model is capable of giving an estimate of the *robustness* of each classification.
+Roughly speaking, we see how much we can perturb the parameters of the SPN without changing the final output.
 The robustness value of each prediction quantifies this pertubation, with larger values for more robust predictions.
+More formally, these robustness values stem from a *credal* interpretation of SPNs; see [2] for a thorough discussion.
 
-2. **Class-selective SPNs**: These are SPNs where class indicators come at the very top of the network. 
-Another way to see this is that we have a mixture of SPNs, one for each class in the dataset. 
+2. **Class-selective SPNs**: These are SPNs where class indicators come at the very top of the network.
+Another way to see this is that we have a mixture of SPNs, one for each class in the dataset.
 We show that *class-selective* SPNs not only outperform regular SPNs at classification tasks but also facilitate 
 the computation of robustness estimates.
 
-3. **Memory caches**: When running an SPN over a large dataset or repeated times 
-(for instance, to compute robustness estimates) many nodes are evaluated at the same evidence many times. 
-We show that having a simple memory cache at the nodes avoids unnecessary calculations and has considerable 
+3. **Memory caches**: When running an SPN over a large dataset or repeated times
+(for instance, to compute robustness estimates) many nodes are evaluated at the same evidence many times.
+We show that having a simple memory cache at the nodes avoids unnecessary calculations and has considerable
 impact on the SPN's inference time.
 
 ---
 If this material has been useful to you, please consider citing
 
-Correia, Alvaro HC, and Cassio P. de Campos. "Towards scalable and robust sum-product networks." 
+Correia, Alvaro HC, and Cassio P. de Campos. "Towards scalable and robust sum-product networks."
 International Conference on Scalable Uncertainty Management. Springer, Cham, 2019.
 
 ```
@@ -51,9 +52,9 @@ The following command runs accuracy comparisons among regular SPNs, class-select
 
 `Rscript sum2019.r -e acc`
 
-For each model, the script will save one csv file containing the information below per test sample. 
-The files are named 
-`<dataset name>_reg.csv` for regular SPN, 
+For each model, the script will save one csv file containing the information below per test sample.
+The files are named
+`<dataset name>_reg.csv` for regular SPN,
 `<dataset name>_sel.csv` for class-selective SPN,
 `<dataset name>_xg.csv` for XGBoost.
 
@@ -91,10 +92,14 @@ Default is NULL which indicates that all datasets will be evaluated;
 
 - `-r` Number of runs. Default 1;
 
-- `g` The maximum height of the SPN. Defaul 1e6, effectively no height restriction;
+- `-g` The maximum height of the SPN. Defaul 1e6, effectively no height restriction;
 
-- `t` The threshold (p-value) below which variables are considered independent. Default 0.01;
+- `-t` The threshold (p-value) below which variables are considered independent. Default 0.01;
 
-[1] Gens, Robert, and Domingos Pedro. 
-"Learning the structure of sum-product networks." 
+[1] Gens, Robert, and Domingos Pedro.
+"Learning the structure of sum-product networks."
 International conference on machine learning. 2013.
+
+[2] Mauá, Denis Deratani, et al.
+"Robustifying sum-product networks."
+International Journal of Approximate Reasoning 101 (2018): 163-180.
