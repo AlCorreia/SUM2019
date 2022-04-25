@@ -58,7 +58,7 @@ spn.learn.aux <- function(data, ncat, scope, thr, nclusters, verb, height, class
         if((height <= 0) || (!last.prod)) { ## just to speed up, since never a product node will have a product node as child (easy to see that)
             ## let us build an undirected graph where two nodes (variables) are connected if they are dependent
             deplist <- list()
-            depfunc <- function(i) { if(deplist[[i]] == i) return(i) else return(deplist[[i]]); }
+            depfunc <- function(i) { if(deplist[[i]] == i) return(i) else return(depfunc(deplist[[i]])); }
             for(i in 1:n) deplist[[i]] <- i
             if(height > 0) {
                 if(verb) cat(paste(Sys.time(),":: Finding components\n"))
