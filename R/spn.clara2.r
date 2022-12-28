@@ -37,5 +37,17 @@ clara2 <- function(data, k, ncat=NULL, metric = "manhattan",
       cnt <- cnt + 1
     }
   }
-  return(clara(data.adapt, k, metric, stand, samples, sampsize, trace, medoids.x, keep.data, rngR, pamLike, correct.d))
+  return(
+    clara(data.adapt, k, 
+      metric=metric, 
+      stand=stand, 
+      samples=samples, 
+      sampsize=sampsize, 
+      trace=trace, 
+      medoids.x=medoids.x, 
+      keep.data=keep.data, 
+      rngR=rngR, 
+      pamLike=pamLike, 
+      correct.d=correct.d)
+    )
 }
